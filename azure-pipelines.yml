@@ -25,6 +25,12 @@ steps:
     SonarQube: 'SonarQube'
     scannerMode: 'CLI'
     configMode: 'file'
+    extraProperties: |
+      sonar-scanner \
+        -Dsonar.projectKey=HelloWorldPythonApp \
+        -Dsonar.sources=. \
+        -Dsonar.host.url=https://sonarqube-azureappservicee389.azurewebsites.net \
+        -Dsonar.login=b9be079b5ec90eb9eecab6f74f2a9e75c95fe0f3
 
 - task: ArchiveFiles@2
   inputs:
