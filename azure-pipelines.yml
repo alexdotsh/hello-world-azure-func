@@ -20,6 +20,37 @@ steps:
     pip3.6 install setuptools
     pip3.6 install -r requirements.txt
 
+- task: SonarQubePrepare@4
+  inputs:
+    SonarQube: 'SonarQube'
+    scannerMode: 'CLI'
+    configMode: 'manual'
+    cliProjectKey: 'HelloWorldPythonApp'
+    cliProjectName: 'HelloWorldPythonApp'
+    cliSources: '.'
+    extraProperties: |
+      sonar-scanner \
+        -Dsonar.projectName=HelloWorldPythonApp \
+        -Dsonar.projectKey=HelloWorldPythonApp \
+        -Dsonar.sources=. \
+        -Dsonar.host.url=https://sonarqube-azureappservicee389.azurewebsites.net \
+        -Dsonar.login=efe1fb00ef10774c2375fbeaf8036ab5ec7e0022
+
+# - task: SonarQubePrepare@4
+#   inputs:
+#     SonarQube: 'SonarQube'
+#     scannerMode: 'CLI'
+#     configMode: 'manual'
+#     cliProjectKey: 'HelloWorldPythonApp'
+#     cliProjectName: 'HelloWorldPythonApp'
+#     cliSources: '.'
+
+- task: SonarQubeAnalyze@4
+
+- task: SonarQubePublish@4
+  inputs:
+    pollingTimeoutSec: '300'
+
 - task: ArchiveFiles@2
   inputs:
     rootFolderOrFile: '$(System.DefaultWorkingDirectory)'
