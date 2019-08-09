@@ -3,7 +3,7 @@ Azure pipeline and function demo using Python
 
 | Requirements    | Task          | Current Status | Finished | 
 |-----------------|---------------|----------------|----------|
-|Create a simple ‘Hello World’ Python app can be Dockerised) that will be run as an Azure Function | Simple Python App | Done | :heavy_check_mark:
+|Create a simple 'Hello World' Python app (can be Dockerised) that will be run as an Azure Function | Simple Python App | Done | :heavy_check_mark:
 |During the build phase run one example of code testing or scanning, for example: Secrets scanning: using TruffleHog on the code repo for your Python app OR Quality scanning: create a SonarQube server using this ARM template & scan your code during the build | Setup and configure SonarQube server | Done | :heavy_check_mark:
 |Demonstrate both pass and fail scenarios in the build history if possible| | Done | :heavy_check_mark:
 |Create a release pipeline that deploys your Python app as an Azure Function| Setup a Azure function resource and task to deploy | Done | :heavy_check_mark:
