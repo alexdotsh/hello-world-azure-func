@@ -48,4 +48,4 @@ steps:
     azureSubscription: 'Free Trial (cdf9f7db-debf-4ea9-90fe-62500f007cf3)'
     appType: 'functionAppLinux'
     appName: 'dev-hello-world-func'
-    package: '$(System.DefaultWorkingDirectory)/**/*.zip'
+    package: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
