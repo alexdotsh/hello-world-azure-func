@@ -26,3 +26,9 @@ steps:
     includeRootFolder: false
 
 - task: PublishBuildArtifacts@1
+
+- task: SonarQubePrepare@4
+  inputs:
+    SonarQube: 'SonarQube'
+    scannerMode: 'CLI'
+    configMode: 'file'
