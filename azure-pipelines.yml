@@ -28,6 +28,8 @@ steps:
     cliProjectKey: 'HelloWorldPythonApp'
     cliProjectName: 'HelloWorldPythonApp'
     cliSources: '.'
+  
+- task: SonarQubeAnalyze@4
 
 - task: SonarQubePublish@4
   inputs:
