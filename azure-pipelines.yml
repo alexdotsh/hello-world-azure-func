@@ -27,16 +27,15 @@ steps:
     configMode: 'file'
     extraProperties: |
       sonar-scanner \
+        -Dsonar.projectName=HelloWorldPythonApp \
         -Dsonar.projectKey=HelloWorldPythonApp \
         -Dsonar.sources=. \
         -Dsonar.host.url=https://sonarqube-azureappservicee389.azurewebsites.net \
-        -Dsonar.login=b9be079b5ec90eb9eecab6f74f2a9e75c95fe0f3
+        -Dsonar.login=efe1fb00ef10774c2375fbeaf8036ab5ec7e0022
 
 - task: SonarQubePublish@4
   inputs:
     pollingTimeoutSec: '300'
-
-- task: SonarQubeAnalyze@4
 
 - task: ArchiveFiles@2
   inputs:
