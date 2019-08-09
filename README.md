@@ -11,25 +11,26 @@ Azure pipeline and function demo using Python
 |Use of pre- and post-deployment conditions| Add pre- and post-deployment conditions | Done | :heavy_check_mark:
 |Your deployed Azure function should result in a response from a testable endpoint| See table for results | Done | :heavy_check_mark:
 
-Azure Devops project can be founh here:
-https://dev.azure.com/alexmirkhaydarov/alex-mirkhaydarov-demo
+**Azure Devops project can be founh here**
+https://dev.azure.com/alexmirkhaydarov/alex-mirkhaydarov-demo  
 
-Main pipeline can be found here:
-Deployments
-https://dev.azure.com/alexmirkhaydarov/alex-mirkhaydarov-demo/_build?definitionId=9
+**Main pipeline can be found here for Deployments**
+https://dev.azure.com/alexmirkhaydarov/alex-mirkhaydarov-demo/_build?definitionId=9  
 
-Relase pipeline can be found here:
-https://dev.azure.com/alexmirkhaydarov/alex-mirkhaydarov-demo/_release?view=mine&definitionId=2
+**Relase pipeline can be found here**
+https://dev.azure.com/alexmirkhaydarov/alex-mirkhaydarov-demo/_release?view=mine&definitionId=2  
 
-PR changes pipeline is mainly used for PR changes as the name indicates.
-https://dev.azure.com/alexmirkhaydarov/alex-mirkhaydarov-demo/_build?definitionId=10
-https://dev.azure.com/alexmirkhaydarov/alex-mirkhaydarov-demo/_release?view=mine&definitionId=3
+**PR changes pipeline is mainly used for PR changes as the name indicates**
+https://dev.azure.com/alexmirkhaydarov/alex-mirkhaydarov-demo/_build?definitionId=10  
+https://dev.azure.com/alexmirkhaydarov/alex-mirkhaydarov-demo/_release?view=mine&definitionId=3  
 
-Testable endpoints
+**Testable endpoints**
 
-DEV:  https://dev-hello-world-func.azurewebsites.net/api/HelloWorld?name=World
-TEST: https://test-hello-world-func.azurewebsites.net/api/HelloWorld?name=World
-RTL:  https://rtl-hello-world-func.azurewebsites.net/api/HelloWorld?name=World
-PROD: https://prod-hello-world-func.azurewebsites.net/api/HelloWorld?name=World
+| Environment Name | Endpoint |
+|------------------|----------|
+| DEV | https://dev-hello-world-func.azurewebsites.net/api/HelloWorld?name=World
+| TEST | https://test-hello-world-func.azurewebsites.net/api/HelloWorld?name=World
+| RTL | https://rtl-hello-world-func.azurewebsites.net/api/HelloWorld?name=World
+| PROD | https://prod-hello-world-func.azurewebsites.net/api/HelloWorld?name=World
 
 SonarQube Analysis report: https://sonarqube-azureappservicee389.azurewebsites.net/dashboard?id=HelloWorldPythonApp
