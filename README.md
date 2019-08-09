@@ -11,16 +11,16 @@ Azure pipeline and function demo using Python
 |Use of pre- and post-deployment conditions| Add pre- and post-deployment conditions | Done | :heavy_check_mark:
 |Your deployed Azure function should result in a response from a testable endpoint| See table for results | Done | :heavy_check_mark:
 
-**Azure Devops project can be founh here**
+**Azure DevOps project can be found here**  
 https://dev.azure.com/alexmirkhaydarov/alex-mirkhaydarov-demo  
 
-**Main pipeline can be found here for Deployments**
+**Main pipeline can be found here for multi-stage deployments**  
 https://dev.azure.com/alexmirkhaydarov/alex-mirkhaydarov-demo/_build?definitionId=9  
 
-**Relase pipeline can be found here**
+**Release pipeline can be found here**  
 https://dev.azure.com/alexmirkhaydarov/alex-mirkhaydarov-demo/_release?view=mine&definitionId=2  
 
-**PR changes pipeline is mainly used for PR changes as the name indicates**
+**PR changes pipeline is mainly used for PR changes as the name indicates**  
 https://dev.azure.com/alexmirkhaydarov/alex-mirkhaydarov-demo/_build?definitionId=10  
 https://dev.azure.com/alexmirkhaydarov/alex-mirkhaydarov-demo/_release?view=mine&definitionId=3  
 
@@ -33,4 +33,5 @@ https://dev.azure.com/alexmirkhaydarov/alex-mirkhaydarov-demo/_release?view=mine
 | RTL | https://rtl-hello-world-func.azurewebsites.net/api/HelloWorld?name=World
 | PROD | https://prod-hello-world-func.azurewebsites.net/api/HelloWorld?name=World
 
-SonarQube Analysis report: https://sonarqube-azureappservicee389.azurewebsites.net/dashboard?id=HelloWorldPythonApp
+**SonarQube Analysis report**  
+https://sonarqube-azureappservicee389.azurewebsites.net/dashboard?id=HelloWorldPythonApp  
