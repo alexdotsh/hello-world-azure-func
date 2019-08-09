@@ -28,15 +28,8 @@ steps:
     tarCompression: none
     verbose: true
 
-- script: |
-    ls -lha
-  displayName: 'Firstls -lha'
-
 - task: PublishBuildArtifacts@1
   inputs:
     pathtoPublish: '$(Build.ArtifactStagingDirectory)' 
     artifactName: 'artifact-$(Build.BuildNumber)' 
 
-- script: |
-    ls -lha
-  displayName: 'Second ls -lha'
