@@ -31,6 +31,10 @@ steps:
         -Dsonar.sources=. \
         -Dsonar.host.url=https://sonarqube-azureappservicee389.azurewebsites.net \
         -Dsonar.login=b9be079b5ec90eb9eecab6f74f2a9e75c95fe0f3
+- task: SonarQubePublish@4
+  inputs:
+    pollingTimeoutSec: '300'
+- task: SonarQubeAnalyze@4
 
 - task: ArchiveFiles@2
   inputs:
