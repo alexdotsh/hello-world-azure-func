@@ -28,13 +28,6 @@ steps:
     cliProjectKey: 'HelloWorldPythonApp'
     cliProjectName: 'HelloWorldPythonApp'
     cliSources: '.'
-    extraProperties: |
-      sonar-scanner \
-        -Dsonar.projectName=HelloWorldPythonApp \
-        -Dsonar.projectKey=HelloWorldPythonApp \
-        -Dsonar.sources=. \
-        -Dsonar.host.url=https://sonarqube-azureappservicee389.azurewebsites.net \
-        -Dsonar.login=efe1fb00ef10774c2375fbeaf8036ab5ec7e0022
 
 - task: SonarQubeAnalyze@4
 
