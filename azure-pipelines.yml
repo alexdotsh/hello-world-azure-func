@@ -24,7 +24,10 @@ steps:
   inputs:
     SonarQube: 'SonarQube'
     scannerMode: 'CLI'
-    configMode: 'file'
+    configMode: 'manual'
+    cliProjectKey: 'HelloWorldPythonApp'
+    cliProjectName: 'HelloWorldPythonApp'
+    cliSources: '.'
     extraProperties: |
       sonar-scanner \
         -Dsonar.projectName=HelloWorldPythonApp \
@@ -32,6 +35,17 @@ steps:
         -Dsonar.sources=. \
         -Dsonar.host.url=https://sonarqube-azureappservicee389.azurewebsites.net \
         -Dsonar.login=efe1fb00ef10774c2375fbeaf8036ab5ec7e0022
+
+# - task: SonarQubePrepare@4
+#   inputs:
+#     SonarQube: 'SonarQube'
+#     scannerMode: 'CLI'
+#     configMode: 'manual'
+#     cliProjectKey: 'HelloWorldPythonApp'
+#     cliProjectName: 'HelloWorldPythonApp'
+#     cliSources: '.'
+
+- task: SonarQubeAnalyze@4
 
 - task: SonarQubePublish@4
   inputs:
